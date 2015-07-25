@@ -1,7 +1,10 @@
-$(call inherit-product, device/samsung/matisselte/full_matisselte.mk)
+#Bliss Audio Mod
+BLISS_AUDIO_MOD := viper
 
-# Inherit some common bliss stuff.
 $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
+$(call inherit-product, device/samsung/matisselte/full_matisselte.mk)
+
+PRODUCT_RELEASE_NAME := SM-T535
 PRODUCT_NAME := bliss_matisselte
-PRODUCT_DEVICE := matisselte
+
