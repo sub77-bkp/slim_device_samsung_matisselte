@@ -20,6 +20,10 @@ $(call inherit-product-if-exists, vendor/samsung/matisselte/matisselte-vendor.mk
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/matisselte/overlay
 
+# Samsung Service Mode    
+PRODUCT_PACKAGES += \
+    SamsungServiceMode
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.crda.sh \
